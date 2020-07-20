@@ -1,4 +1,5 @@
 ---Affoua
+--supperssion EmployeeTerritories
 
 SET NOCOUNT ON
 GO
@@ -9326,12 +9327,4 @@ ALTER TABLE EmployeeTerritories
 	)
 GO
 
-
-ALTER TABLE EmployeeTerritories	
-	ADD CONSTRAINT [FK_EmployeeTerritories_Territories] FOREIGN KEY 
-	(
-		[TerritoryID]
-	) REFERENCES [dbo].[Territories] (
-		[TerritoryID]
-	)
-GO
+--- EmployeeTerritories
